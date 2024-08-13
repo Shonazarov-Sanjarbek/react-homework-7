@@ -1,9 +1,10 @@
 import React from 'react'
+import Connection from '../../components/Connection/Connection'
 
 const Contact = () => {
   return (
     <div>
-        <h2>contact</h2>
+      < Connection />
     </div>
   )
 }

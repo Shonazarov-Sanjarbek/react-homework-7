@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Katalog from './pages/Katalog/Katalog'
 import Dastavka from './pages/Dastavka/Dastavka'
+import Navbar from './components/Navbar/Navbar'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       < Header about = {["+ 375 736 463 64 72", "/", "+ 375 736 463 64 72"]} />
+      <Navbar />
       <Routes>
         <Route path='/' element = { < Home />}/>
         <Route path='/katalog' element = { < Katalog />}/>

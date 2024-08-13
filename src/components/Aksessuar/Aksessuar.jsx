@@ -82,7 +82,7 @@ const card = [
     five: "Кровати",
     }
 ]
-console.log(card);
+// console.log(card);
 
 
 const Aksessuar = () => {
