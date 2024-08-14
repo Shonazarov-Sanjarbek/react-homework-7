@@ -1,16 +1,21 @@
 import React from 'react'
 import logo from "../../assets/logo.png"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 
 
 const Header = ({about}) => {
+
+  const {pathname} = useLocation()
     
 
     const call = about?.map((p, inx) => (
         <p key={inx} className='text-xl	s'>{p}</p>
     ))
 
+    if (pathname === "/location"){
+      return <></>
+    }
   return (
     <div>
               <div className="header py-5">
@@ -37,7 +42,7 @@ const Header = ({about}) => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={`*`} className={"text-black font-normal text-lg"}>
+                        <NavLink to={`/location`} className={"text-black font-normal text-lg"}>
                             Условия
                         </NavLink>
                     </li>

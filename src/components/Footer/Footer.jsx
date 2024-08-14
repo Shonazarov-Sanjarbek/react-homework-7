@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from "../../assets/logo.png"
 import instagram from "../../assets/ins.png"
+import { useLocation } from 'react-router-dom';
+
 
 const Footer = ({information, menu, contact}) => {
 
@@ -22,6 +24,11 @@ const Footer = ({information, menu, contact}) => {
         </li>
     ))
 
+    const {pathname} = useLocation()
+
+    if (pathname === "/location"){
+      return <></>
+    }
   return (
     <>
         <div id="Footer" className="bg-slate-100 py-[40px] mt-36">
