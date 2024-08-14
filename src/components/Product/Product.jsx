@@ -13,7 +13,7 @@ const Product = () => {
     const [loading, setLoading] = useState(false)
     const [categories, setCategories] = useState(null)
     const [selectCategory, setSelectCategory] = useState("")
-    const [offsetLimit, setOffsetLimit] = useState("")
+    const [offsetLimit, setOffsetLimit] = useState(1)
     const [total, setTotal] = useState(0)
 
     let limit = 4   
@@ -26,7 +26,7 @@ const Product = () => {
             .then(res => setCategories(res.data))
             .catch(err => console.log(err))
             
-    })
+    }, [])
 
     useEffect(() => {
         setLoading(true)
@@ -44,6 +44,9 @@ const Product = () => {
             .finally(() => setLoading(false))
 
     }, [offsetLimit, selectCategory]);
+
+    console.log(offsetLimit);
+    
 
     const skeletonItems = new Array(limit).fill("").map((_, inx)=> (
         <div key={inx} className='w-[300px] border rounded-[30px] p-4 flex flex-col gap-4'>
