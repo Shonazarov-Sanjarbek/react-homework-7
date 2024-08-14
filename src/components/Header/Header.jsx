@@ -13,7 +13,7 @@ const Header = ({about}) => {
         <p key={inx} className='text-xl	s'>{p}</p>
     ))
 
-    if (pathname === "/location"){
+    if (pathname === "/location" || pathname === "*"){
       return <></>
     }
   return (
