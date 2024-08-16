@@ -26,9 +26,6 @@ const Footer = ({information, menu, contact}) => {
 
     const {pathname} = useLocation()
 
-    if (pathname === "/location"){
-      return <></>
-    }
   return (
     <>
         <div id="Footer" className="bg-slate-100 py-[40px] mt-36">

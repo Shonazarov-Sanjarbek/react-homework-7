@@ -10,9 +10,6 @@ import { useLocation } from 'react-router-dom';
 const Navbar = () => {
     const {pathname} = useLocation()
 
-    if (pathname === "/location"){
-      return <></>
-    }
   return (
     <div className=" containers mx-auto mb-[120px] flex items-center justify-between">
         <div className="flex  items-center gap-[100px] mt-[30px]">

@@ -7,8 +7,8 @@ import { IoLogoGoogleplus } from "react-icons/io";
 
 const Connection = () => {
   return (
-    <>
-      <div className="container mx-auto">
+    <div className="mt-28 border">
+      <div className="containers">
         <p className="text-[36px] text font-[700] mt-[-100px] mb-11">
           Контакты
         </p>
@@ -42,7 +42,7 @@ const Connection = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
