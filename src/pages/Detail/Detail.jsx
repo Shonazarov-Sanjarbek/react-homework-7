@@ -50,9 +50,7 @@ const Detail = () => {
       className=" overflow-hidden group w-[300px] mt-7 relative duration-300 p-4 gap-1 hover:shadow-lg hover:cursor-pointer flex flex-col rounded-[30px]"
     >
       <div className="">
-        <Link to={`${product.id}`}>
           <img className="w-full h-[300px] object-contain" src={product.images[0]} alt="" />
-        </Link>
       </div>
       <p className="text-[red] font-bold">12%</p>
       <h3 className="text-xl">{product.title}</h3>
@@ -82,7 +80,7 @@ const Detail = () => {
         </div>
       <div className="w-1/2 flex justify-end">
           <button className="w-[48px] h-[48px] bg-yellow-400 rounded-[50%] flex items-center justify-center text-white text-3xl">
-            <MdOutlineAddShoppingCart />q
+            <MdOutlineAddShoppingCart />
           </button>
         </div>
       </div>
