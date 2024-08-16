@@ -112,12 +112,12 @@ const Product = () => {
             {categoryItems}
         </select>
         <div className='flex justify-center flex-wrap'>
+            {productItem}
             {
                 <div className='flex gap-2  '>
                      {loading && skeletonItems}
                 </div>
             }
-            {productItem}
         </div>
         {
         limit * offset <= total ?
